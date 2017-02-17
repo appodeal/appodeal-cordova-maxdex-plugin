@@ -26,7 +26,7 @@
         </config-file>
         <framework src="com.google.android.gms:play-services-ads:9+" />
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
-			<meta-data android:name="com.appodeal.framework" android:value="android" />
+			<meta-data android:name="com.appodeal.framework" android:value="phonegap" />
 			<receiver android:name="com.appodeal.ads.AppodealPackageAddedReceiver" android:exported="true" android:enabled="true">
 			<intent-filter>
 				<action android:name="android.intent.action.PACKAGE_ADDED" />
