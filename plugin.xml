@@ -26,8 +26,8 @@
         </config-file>
         <framework src="com.google.android.gms:play-services-ads:9+" />
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
-            <meta-data android:name="com.appodeal.framework" android:value="phonegap" />
-            <receiver android:name="com.appodeal.ads.AppodealPackageAddedReceiver" android:exported="true" android:enabled="true">
+			<meta-data android:name="com.appodeal.framework" android:value="android" />
+			<receiver android:name="com.appodeal.ads.AppodealPackageAddedReceiver" android:exported="true" android:enabled="true">
 			<intent-filter>
 				<action android:name="android.intent.action.PACKAGE_ADDED" />
 				<data android:scheme="package" />
@@ -75,7 +75,7 @@
 
 			<activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-			<activity android:name="com.my.target.ads.MyTargetActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+			<activity android:name="com.my.target.ads.MyTargetActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true"/>
 
 			<activity android:name="org.nexage.sourcekit.vast.activity.VASTActivity"
 				  android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
@@ -140,7 +140,7 @@
 					<action android:name="com.yandex.metrica.IMetricaService" />
 					<data android:scheme="metrica" />
 				</intent-filter>
-				<meta-data android:name="metrica:api:level" android:value="44" />
+				<meta-data android:name="metrica:api:level" android:value="52" />
 			</service>
 			<receiver android:name="com.yandex.metrica.MetricaEventHandler"
 				  android:enabled="true" android:exported="true">
@@ -172,15 +172,10 @@
 			<!--suppress AndroidDomInspection -->
 			<activity android:name="com.tapjoy.TJContentActivity" android:configChanges="orientation|keyboardHidden|screenSize"
 						android:theme="@android:style/Theme.Translucent.NoTitleBar" android:hardwareAccelerated="true" />
-            <activity android:name="com.cmcm.picks.PicksLoadingActivity" android:launchMode="singleTask" android:taskAffinity="com.cmcm.adsdk.nativead" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-            <activity android:name="com.cmcm.adsdk.interstitial.PicksInterstitialActivity" android:launchMode="singleTask" android:theme="@style/cm_interstital" />
-            <activity android:name="com.cmcm.picks.webview.PicksBrowser" android:launchMode="singleTask" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-            <service android:name="com.cmcm.picks.init.DownloadService" android:exported="false" android:process=":PickService" />
-            <activity android:name="com.cmcm.picks.vastvideo.FullScreenVideoActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="landscape"/>
         </config-file>
         <source-file src="src/android/AppodealPlugin.java" target-dir="src/com/appodeal/plugin" />
-        <source-file src="libs/appodeal-1.15.8.jar" target-dir="libs" />
-        <source-file src="libs/yandex-metrica-2.51.jar" target-dir="libs" />
+        <source-file src="libs/appodeal-1.15.9.jar" target-dir="libs" />
+        <source-file src="libs/yandex-metrica-2.62.jar" target-dir="libs" />
         <framework src="libs/cheetah-mobile" custom="true" />
     </platform>
 
