@@ -182,6 +182,7 @@
         <source-file src="libs/appodeal-1.15.9.jar" target-dir="libs" />
         <source-file src="libs/yandex-metrica-2.62.jar" target-dir="libs" />
         <framework src="libs/cheetah-mobile" custom="true" />
+		<framework src="src/android/dependency_fix.gradle" custom="true" type="gradleReference" />
     </platform>
 
   </plugin>
