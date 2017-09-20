@@ -1,29 +1,38 @@
-#Appodeal Cordova Plugin Max Dex
+# Appodeal Cordova Plugin Max Dex
 
 This is official Appodeal Cordova plugin, created to support Appodeal SDK with Apache Cordova.
 This version supports android platform only. Use it in case if you receive "method ID not in [0, 0xffff]: 65536" build error with other versions.
 
-##SDK
-[![](https://img.shields.io/badge/docs-android-green.svg)](http://www.appodeal.com/sdk/documentation?framework=9&full=1&platform=1)
+## SDK
+[![](https://img.shields.io/badge/docs-android-green.svg)](http://www.appodeal.com/sdk/cordova2)
 
 Appodeal Android SDK already included to the plugin.
 
-##Install
+## Install
 
 Simply go to the project folder over console/terminal and run there following command:
 
-    cordova plugin add https://github.com/appodeal/appodeal-cordova-maxdex-plugin.git
+    cordova plugin add https://github.com/appodeal/appodeal-cordova-maxdex-plugin.git#cordova2
 
-For Android You don't need to make something additional.
+Google Play Services (v9+) already included to plugin dependencies.
 
-###Requirements:
- 
-####For Android:
+If you have issues while installing plugin, follow the Command-line Interface Guide.
 
-+ Android SDK installed
+Minimum OS requirements: Android API level 9 (Android OS 2.3).
+
+Android Appodeal SDK version 2.0.2
 
     
-##Changelog
+## Changelog
+
+3.0.0 (20.06.2017)
+
++ Appodeal Android SDK updated to 2.02
++ Appodeal.confirm removed
++ Appodeal.canShow added
++ SetOnLoadedTriggerBoth renamed to setTriggerOnLoadedOnPrecache
++ callbacks reworked, follow docs on appodeal.com/sdk/cordova2
++ optional permissions to AndroidManifest added
 
 2.0.1 (31.10.2016)
 
