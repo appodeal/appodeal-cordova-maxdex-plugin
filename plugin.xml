@@ -319,10 +319,8 @@
         <framework custom="true" src="libs/iOS/Adapters/APDInMobiAdapter.embeddedframework/InMobiSDK.framework"/>
         <source-file src="libs/iOS/Adapters/APDInMobiAdapter.embeddedframework/libAPDInMobiAdapter.a" framework="true"/>
         <!-- Ironsource -->
-        <framework custom="true" src="libs/iOS/Adapters/APDIronSourceAdapter.embeddedframework/Supersonic.framework"/>
+        <framework custom="true" src="libs/iOS/Adapters/APDIronSourceAdapter.embeddedframework/IronSource.framework"/>
         <source-file src="libs/iOS/Adapters/APDIronSourceAdapter.embeddedframework/libAPDIronSourceAdapter.a" framework="true"/>
-        <resource-file src="libs/iOS/Adapters/APDIronSourceAdapter.embeddedframework/Resources/button-close-highlighted.png"/>
-        <resource-file src="libs/iOS/Adapters/APDIronSourceAdapter.embeddedframework/Resources/button-close-default.png"/>
         <!-- MyTarget -->
         <framework custom="true" src="libs/iOS/Adapters/APDMyTargetAdapter.embeddedframework/MyTargetSDK.framework"/>
         <source-file src="libs/iOS/Adapters/APDMyTargetAdapter.embeddedframework/libAPDMyTargetAdapter.a" framework="true"/>
@@ -367,7 +365,5 @@
         <framework custom="true" src="libs/iOS/Adapters/APDYandexAdapter.embeddedframework/YandexMobileMetrica.framework"/>
         <framework custom="true" src="libs/iOS/Adapters/APDYandexAdapter.embeddedframework/YandexMobileAds.framework"/>
         <source-file src="libs/iOS/Adapters/APDYandexAdapter.embeddedframework/libAPDYandexAdapter.a" framework="true"/>
-        <!-- Yandex -->
-        <source-file src="libs/iOS/Adapters/APDZplayAdapter.embeddedframework/libAPDZplayAdapter.a" framework="true"/>
       </platform>
 </plugin>
